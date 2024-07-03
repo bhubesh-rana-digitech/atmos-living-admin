@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from 'react';
 import Image from 'next/image';
 import sidebarLogo from '@/assets/images/white-logo-circle.svg';

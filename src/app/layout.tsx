@@ -4,7 +4,6 @@ import "@/assets/style/tailwind.css";
 import "@/assets/style/app.scss";
 import SidebarAtm from "@/common/SidebarAtm";
 import AdminHeader from "@/common/AdminHeader";
-import PageTitle from "@/common/PageTitle";
 
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
