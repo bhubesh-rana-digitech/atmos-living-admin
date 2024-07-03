@@ -1,21 +1,18 @@
 "use client";
-
 import React, { useState } from 'react';
 import Image from 'next/image';
 import sidebarLogo from '@/assets/images/white-logo-circle.svg';
 import { FaRegAddressCard } from 'react-icons/fa';
 import { IoLocationSharp } from 'react-icons/io5';
-import { BiRefresh } from 'react-icons/bi';
 import { LiaFileInvoiceDollarSolid } from 'react-icons/lia';
 import { BsFileEarmarkText } from 'react-icons/bs';
 import { ImUser, ImUsers } from 'react-icons/im';
-import { HomeIcon } from 'lucide-react';
 import { GoHomeFill } from 'react-icons/go';
 import { IoMdBookmarks } from 'react-icons/io';
+import Link from 'next/link';
 
 function SidebarAtm() {
     const [isOpen, setIsOpen] = useState(false);
-
     const handleDropdownToggle = () => {
         setIsOpen(!isOpen);
     };
@@ -33,9 +30,9 @@ function SidebarAtm() {
                             <div className="">
                                 <ul className="space-y-2 font-medium">
                                     <li>
-                                        <a href="#" className="flex items-center py-3 text-[rgba(255,255,255,0.85)] rounded-lg dark:text-white hover:text-[#DEBD6B] focus:text-[#DEBD6B]">
+                                        <Link href='/' className="flex items-center py-3 text-[rgba(255,255,255,0.85)] rounded-lg dark:text-white hover:text-[#DEBD6B] focus:text-[#DEBD6B]">
                                             <span className='flex items-center justify-center min-w-[60px]'><FaRegAddressCard className='text-[19px]' /></span> <span className='w-[calc(100%_-_60px)]'>Dashboard</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <button type="button" className="flex items-center w-full py-3 text-base text-[rgba(255,255,255,0.85)] transition duration-75 hover:text-[#DEBD6B] focus:text-[#DEBD6B]" aria-controls="dropdown-example" onClick={handleDropdownToggle}>
@@ -46,7 +43,7 @@ function SidebarAtm() {
                                         {isOpen && (
                                             <ul id="dropdown-example" className="bg-[rgba(0,0,0,0.08)] py-1">
                                                 <li>
-                                                    <a href="#" className="flex items-center w-full py-2 text-[rgba(255,255,255,0.85)] transition duration-75 pl-[75px] group hover:text-[#DEBD6B] focus:text-[#DEBD6B]">Products</a>
+                                                    <a href="/user-list" className="flex items-center w-full py-2 text-[rgba(255,255,255,0.85)] transition duration-75 pl-[75px] group hover:text-[#DEBD6B] focus:text-[#DEBD6B]">Products</a>
                                                 </li>
                                                 <li>
                                                     <a href="#" className="flex items-center w-full py-2 text-[rgba(255,255,255,0.85)] transition duration-75 pl-[75px] group hover:text-[#DEBD6B] focus:text-[#DEBD6B]">Billing</a>

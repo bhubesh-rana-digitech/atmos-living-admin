@@ -20,18 +20,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-[#f3f3f9]">
       <body className={publicSans.className}>
         <div className="atmosphere-dashboard">
           <div className="atmosphere-wrapper">
-            {/* <SidebarAtm/> */}
-           
-            <DynamicSlider/>
-            <div className="atmosphere-content transition-all pl-[300px]">
+            <SidebarAtm/>
+            <div className="atmosphere-content transition-all duration-300 pl-[300px]">
               <AdminHeader/>
-              {children}
+              <div className="content p-[30px]">
+                {children}
+              </div>              
             </div>
           </div>
+          
         </div>
       </body>
     </html>
