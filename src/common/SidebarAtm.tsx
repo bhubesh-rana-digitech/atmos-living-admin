@@ -24,7 +24,7 @@ function SidebarAtm() {
         <div className='atmoshphere-sidebar z-1 w-full max-w-[300px] bg-[#2d5e59] transition-all fixed start-0 top-0 bottom-0'>
             <div className='sidebar-wrap h-full'>
                 <div className='atmosphere-logo flex justify-center px-3 py-[11.23px] text-center bg-[rgba(0,0,0,0.1)] border-[rgba(0,0,0,0.1)] border-b'>
-                    <Image className='max-w-[48px] w-full' src={sidebarLogo} alt=""/>
+                    <Image className='max-w-[48px] w-full' src={sidebarLogo} alt="" />
                 </div>
                 <div className='atmosphere-sidebar-navs py-8 border-t border-[rgba(255,255,255,0.1)] h-[calc(100vh_-_70px)]'>
                     <small className='text-white opacity-50 text-uppercase mb-2 uppercase text-[12px] w-[60px] flex justify-center'>menu</small>
@@ -64,32 +64,32 @@ function SidebarAtm() {
                                     </li>
                                     <li>
                                         <a href="#" className="flex items-center py-3 text-[rgba(255,255,255,0.85)] dark:text-white hover:text-[#DEBD6B] focus:text-[#DEBD6B]">
-                                        <span className='flex items-center justify-center min-w-[60px]'><IoMdBookmarks className='text-[19px]' /></span> <span className='w-[calc(100%_-_60px)]'>Bookings</span>
+                                            <span className='flex items-center justify-center min-w-[60px]'><IoMdBookmarks className='text-[19px]' /></span> <span className='w-[calc(100%_-_60px)]'>Bookings</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" className="flex items-center py-3 text-[rgba(255,255,255,0.85)] dark:text-white hover:text-[#DEBD6B] focus:text-[#DEBD6B]">
-                                        <span className='flex items-center justify-center min-w-[60px]'><ImUsers className='text-[19px]' /></span> <span className='w-[calc(100%_-_60px)]'>Customers</span>
+                                            <span className='flex items-center justify-center min-w-[60px]'><ImUsers className='text-[19px]' /></span> <span className='w-[calc(100%_-_60px)]'>Customers</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" className="flex items-center py-3 text-[rgba(255,255,255,0.85)] dark:text-white hover:text-[#DEBD6B] focus:text-[#DEBD6B]">
-                                        <span className='flex items-center justify-center min-w-[60px]'><IoLocationSharp className='text-[19px]' /></span> <span className='w-[calc(100%_-_60px)]'>Site visits</span>
+                                            <span className='flex items-center justify-center min-w-[60px]'><IoLocationSharp className='text-[19px]' /></span> <span className='w-[calc(100%_-_60px)]'>Site visits</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" className="flex items-center py-3 text-[rgba(255,255,255,0.85)] dark:text-white hover:text-[#DEBD6B] focus:text-[#DEBD6B]">
-                                        <span className='flex items-center justify-center min-w-[60px]'><LiaFileInvoiceDollarSolid className='text-[19px]' /></span> <span className='w-[calc(100%_-_60px)]'>Transactions</span>
+                                            <span className='flex items-center justify-center min-w-[60px]'><LiaFileInvoiceDollarSolid className='text-[19px]' /></span> <span className='w-[calc(100%_-_60px)]'>Transactions</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" className="flex items-center py-3 text-[rgba(255,255,255,0.85)] dark:text-white hover:text-[#DEBD6B] focus:text-[#DEBD6B]">
-                                        <span className='flex items-center justify-center min-w-[60px]'><BsFileEarmarkText className='text-[19px]' /></span> <span className='w-[calc(100%_-_60px)]'>Policies</span>
+                                            <span className='flex items-center justify-center min-w-[60px]'><BsFileEarmarkText className='text-[19px]' /></span> <span className='w-[calc(100%_-_60px)]'>Policies</span>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" className="flex items-center py-3 text-[rgba(255,255,255,0.85)] dark:text-white hover:text-[#DEBD6B] focus:text-[#DEBD6B]">
-                                        <span className='flex items-center justify-center min-w-[60px]'><ImUser className='text-[19px]' /></span> <span className='w-[calc(100%_-_60px)]'>Masters</span>
+                                            <span className='flex items-center justify-center min-w-[60px]'><ImUser className='text-[19px]' /></span> <span className='w-[calc(100%_-_60px)]'>Masters</span>
                                         </a>
                                     </li>
                                 </ul>

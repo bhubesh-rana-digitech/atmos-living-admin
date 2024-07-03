@@ -5,6 +5,8 @@ import "@/assets/style/app.scss";
 import SidebarAtm from "@/common/SidebarAtm";
 import AdminHeader from "@/common/AdminHeader";
 
+import DynamicSlider from "@/common/DynamicSlider";
+
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -22,7 +24,9 @@ export default function RootLayout({
       <body className={publicSans.className}>
         <div className="atmosphere-dashboard">
           <div className="atmosphere-wrapper">
-            <SidebarAtm/>
+            {/* <SidebarAtm/> */}
+           
+            <DynamicSlider/>
             <div className="atmosphere-content transition-all pl-[300px]">
               <AdminHeader/>
               {children}
