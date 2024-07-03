@@ -3,12 +3,12 @@ import React from 'react'
 import { MdEmail } from 'react-icons/md'
 import { ScrollArea } from "@/components/ui/scroll-area"
 
-function HeaderNotification({notificationData=[]}) {
+function HeaderEmail({emailData=[]}) {
   return (
     <>  
         <ScrollArea className="h-[300px]">
             <ul className='notification-list list-unstyled m-0 p-0 w-full max-w-[320px]'>
-                {notificationData.map((data, index) => (
+                {emailData.map((data, index) => (
                     <li className='' key={index}>
                         <div className="notification-wrap py-4 px-4 flex items-start">
                             <div className="notify-icon w-12 h-12">
@@ -37,4 +37,4 @@ function HeaderNotification({notificationData=[]}) {
   )
 }
 
-export default HeaderNotification
+export default HeaderEmail

@@ -4,6 +4,7 @@ import "@/assets/style/tailwind.css";
 import "@/assets/style/app.scss";
 import SidebarAtm from "@/common/SidebarAtm";
 import AdminHeader from "@/common/AdminHeader";
+import PageTitle from "@/common/PageTitle";
 
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
@@ -18,16 +19,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-[#f3f3f9]">
       <body className={publicSans.className}>
         <div className="atmosphere-dashboard">
           <div className="atmosphere-wrapper">
             <SidebarAtm/>
-            <div className="atmosphere-content transition-all pl-[300px]">
+            <div className="atmosphere-content transition-all duration-300 pl-[300px]">
               <AdminHeader/>
-              {children}
+              <div className="content p-[30px]">
+                {children}
+              </div>              
             </div>
           </div>
+          
         </div>
       </body>
     </html>
