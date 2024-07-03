@@ -5,7 +5,7 @@ import "@/assets/style/app.scss";
 import SidebarAtm from "@/common/SidebarAtm";
 import AdminHeader from "@/common/AdminHeader";
 
-import DynamicSlider from "@/common/DynamicSlider";
+
 
 const publicSans = Public_Sans({ subsets: ["latin"] });
 
