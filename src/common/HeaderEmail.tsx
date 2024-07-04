@@ -2,13 +2,22 @@ import Link from 'next/link'
 import React from 'react'
 import { MdEmail } from 'react-icons/md'
 import { ScrollArea } from "@/components/ui/scroll-area"
-
-function HeaderEmail({emailData=[]}) {
+interface EmailData{
+    notifyLink:string;
+    notifyTitle:string;
+    notifyDes:string;
+    noficeTime:string;
+}
+interface HeaderEmailProp{
+    emailData?:EmailData[];
+}
+function HeaderEmail({emailData}:HeaderEmailProp) {
+   
   return (
     <>  
         <ScrollArea className="h-[300px]">
             <ul className='notification-list list-unstyled m-0 p-0 w-full max-w-[320px]'>
-                {emailData.map((data, index) => (
+                {emailData?.map((data, index) => (
                     <li className='' key={index}>
                         <div className="notification-wrap py-4 px-4 flex items-start">
                             <div className="notify-icon w-12 h-12">

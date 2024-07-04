@@ -1,7 +1,18 @@
 import Link from 'next/link'
 import React from 'react'
+import {IconType} from "react-icons"
+interface UserNavData{
+  navIcon:IconType;
+  navName:string;
+  userNavLink:string;
+}
+interface UserNavsProp{
+  userNavData?:UserNavData[];
+  userName?:string;
+  userPosition?:string;
+}
+function UserNavs({userNavData,userName='',userPosition=''}:UserNavsProp) {
 
-function UserNavs({userNavData=[],userName='',userPosition=''}) {
   return (
     <>
         <div className='rounded-[10px] bg-[#32998F] min-w-[220px] pb-4'>
@@ -12,11 +23,11 @@ function UserNavs({userNavData=[],userName='',userPosition=''}) {
                 </div>
             </div>
             <ul className='dropdown-nav list-unstyled m-0 p-0 w-full'>
-              {userNavData.map((data, index)=>(
+              {userNavData?.map((data, index)=>(
                 <li key={index}>
                   <Link className='flex items-center text-white px-5 py-3 text-[15px] hover:bg-[rgba(255,255,255,0.05)]' href={data.userNavLink}>
                     <div className="demo-icon icon-user text-lg">
-                      {data.navIcon}
+                      <data.navIcon/>
                     </div>
                     <div className='nav-name ps-3 capitalize'>{data.navName}</div>
                   </Link>

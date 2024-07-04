@@ -2,8 +2,16 @@ import Link from 'next/link'
 import React from 'react'
 import { MdEmail } from 'react-icons/md'
 import { ScrollArea } from "@/components/ui/scroll-area"
-
-function HeaderNotification({notificationData=[]}) {
+interface NotificationData{
+    notifyLink:string;
+    notifyTitle:string;
+    notifyDes:string;
+    noficeTime:string;
+}
+interface HeaderNotificationProp{
+    notificationData:NotificationData[];
+}
+function HeaderNotification({notificationData}:HeaderNotificationProp) {
   return (
     <>  
         <ScrollArea className="h-[300px]">
