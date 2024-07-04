@@ -30,7 +30,7 @@ const navigationItems: NavigationItem[] = [
     id: 1,
     icon: FaRegAddressCard,
     label: "Dashboard",
-    href: "#",
+    href: "/",
   },
   {
     id: 2,
@@ -38,8 +38,8 @@ const navigationItems: NavigationItem[] = [
     label: "User Management",
     href: "#",
     submenu: [
-      { id: 1, label: "List of Users", href: "#" },
-      { id: 2, label: "Manage Roles", href: "#" },
+      { id: 1, label: "List of Users", href: "/user-list" },
+      { id: 2, label: "Manage Roles", href: "/manage-roles" },
     ],
   },
   {
@@ -48,17 +48,17 @@ const navigationItems: NavigationItem[] = [
     label: "Manage Projects",
     href: "#",
     submenu: [
-      { id: 4, label: "List of Projects", href: "#" },
-      { id: 5, label: "All Units", href: "#" },
-      { id: 6, label: "Manage Amenities", href: "#" },
-      { id: 7, label: "Payment Plans", href: "#" },
+      { id: 4, label: "List of Projects", href: "/projects-list" },
+      { id: 5, label: "All Units", href: "/all-units" },
+      { id: 6, label: "Manage Amenities", href: "/manage-amenities" },
+      { id: 7, label: "Payment Plans", href: "/payment-plans" },
     ],
   },
   {
     id: 4,
     icon: IoMdBookmarks,
     label: "Bookings",
-    href: "#",
+    href: "/bookings",
   },
   {
     id: 5,
@@ -66,33 +66,33 @@ const navigationItems: NavigationItem[] = [
     label: "Customers",
     href: "#",
     submenu: [
-      { id: 8, label: "Web Customers", href: "#" },
-      { id: 9, label: "Owners", href: "#" },
+      { id: 8, label: "Web Customers", href: "/web-customers" },
+      { id: 9, label: "Owners", href: "/owners" },
     ],
   },
   {
     id: 6,
     icon: IoLocationSharp,
     label: "Site visits",
-    href: "#",
+    href: "/site-visits",
   },
   {
     id: 7,
     icon: LiaFileInvoiceDollarSolid,
     label: "Transactions",
-    href: "#",
+    href: "/transactions",
   },
   {
     id: 8,
     icon: BsFileEarmarkText,
     label: "Policies",
-    href: "#",
+    href: "/policies",
   },
   {
     id: 9,
     icon: ImUser,
     label: "Masters",
-    href: "#",
+    href: "/masters",
   },
 ];
 

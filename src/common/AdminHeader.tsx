@@ -70,7 +70,7 @@ console.log(open,"open")
                 <div className="notifications me-6 h-full">
                     <DropdownMenu>
                         <DropdownMenuTrigger className='focus:bottom-0 focus:outline-none focus:shadow-none focus-visible:bottom-0 focus-visible:outline-none focus-visible:shadow-none h-full'><span className='flex items-center text-white'><HiOutlineMail className='text-white text-[23px] me-2'/> <IoIosArrowDown className='opacity-75 text-[14px]' /></span></DropdownMenuTrigger>
-                        <DropdownMenuContent>
+                        <DropdownMenuContent className='p-0 bg-transparent border-0'>
                             <HeaderEmail emailData={emailData}/>
                         </DropdownMenuContent>
                     </DropdownMenu>
@@ -78,7 +78,7 @@ console.log(open,"open")
                 <div className="notifications me-6 h-full">
                     <DropdownMenu>
                         <DropdownMenuTrigger className='focus:bottom-0 focus:outline-none focus:shadow-none focus-visible:bottom-0 focus-visible:outline-none focus-visible:shadow-none h-full'><span className='flex items-center text-white'><FaRegBell className='text-white text-[23px] me-2'/> <IoIosArrowDown className='opacity-75 text-[14px]' /></span></DropdownMenuTrigger>
-                        <DropdownMenuContent>
+                        <DropdownMenuContent className='p-0 bg-transparent border-0'>
                             <HeaderNotification notificationData={notificationData}/>
                         </DropdownMenuContent>
                     </DropdownMenu>
