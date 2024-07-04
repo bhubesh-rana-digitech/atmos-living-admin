@@ -42,7 +42,7 @@ function UsersList() {
                     <SelectTrigger className="py-1 text-[13px] h-auto border-gray-300 rounded-[3px]">
                       <SelectValue placeholder="Active" />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className='bg-white'>
                       <SelectItem value="Active">Active</SelectItem>
                       <SelectItem value="Suspended">Suspended</SelectItem>
                     </SelectContent>
@@ -64,7 +64,7 @@ function UsersList() {
                     <SelectTrigger className="py-1 text-[13px] h-auto border-gray-300 rounded-[3px]">
                       <SelectValue placeholder="Active" />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className='bg-white'>
                       <SelectItem value="Active">Active</SelectItem>
                       <SelectItem value="Suspended">Suspended</SelectItem>
                     </SelectContent>
@@ -86,7 +86,7 @@ function UsersList() {
                     <SelectTrigger className="py-1 text-[13px] h-auto border-gray-300 rounded-[3px]">
                       <SelectValue placeholder="Active" />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className='bg-white'>
                       <SelectItem value="Active">Active</SelectItem>
                       <SelectItem value="Suspended">Suspended</SelectItem>
                     </SelectContent>
@@ -108,7 +108,7 @@ function UsersList() {
                     <SelectTrigger className="py-1 text-[13px] h-auto border-gray-300 rounded-[3px]">
                       <SelectValue placeholder="Active" />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className='bg-white'>
                       <SelectItem value="Active">Active</SelectItem>
                       <SelectItem value="Suspended">Suspended</SelectItem>
                     </SelectContent>
@@ -130,7 +130,7 @@ function UsersList() {
                     <SelectTrigger className="py-1 text-[13px] h-auto border-gray-300 rounded-[3px]">
                       <SelectValue placeholder="Active" />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className='bg-white'>
                       <SelectItem value="Active">Active</SelectItem>
                       <SelectItem value="Suspended">Suspended</SelectItem>
                     </SelectContent>
