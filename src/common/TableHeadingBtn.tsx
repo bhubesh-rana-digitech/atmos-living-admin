@@ -23,10 +23,11 @@ function TableHeadingBtn({showButton='',headingName='',tableActionLink='',action
                             Add User
                             </Dialog.Title>
                             <div className='px-5 pb-7'>
+                              <form action='get'>
                               <div className='grid grid-cols-2 gap-6'>
                                 <div className='input-group'>
                                   <label className="text-[15px] mb-2 flex text-gray-800" htmlFor="name">Name</label>
-                                    <input type='text' className="focus:shadow-violet8 inline-flex w-full rounded-[4px] py-3.5 border border-gray-300 px-[18px] text-[15px] outline-none focus:border-[#316863]" id="name"/>
+                                    <input type='text' required className="focus:shadow-violet8 inline-flex w-full rounded-[4px] py-3.5 border border-gray-300 px-[18px] text-[15px] outline-none focus:border-[#316863]" id="name"/>
                                 </div>
                                 <div className='input-group'>
                                 <label className="text-[15px] mb-2 flex text-gray-800" htmlFor="email">Email</label>
@@ -51,13 +52,10 @@ function TableHeadingBtn({showButton='',headingName='',tableActionLink='',action
                                 </Select>
                               </div>
                               </div>
-                              <div className="mt-[25px] flex justify-end">
-                                <Dialog.Close asChild>
-                                  <button className="btn py-2.5 px-7 bg-[#D2AE5F] text-[13px] text-white rounded-0 uppercase mb-0 transition-all duration-500 hover:bg-[#E7C16D]">
-                                    Add New
-                                  </button>
-                                </Dialog.Close>
+                              <div className='submit-btn flex justify-end mt-6'>
+                                <input type="submit" className='cursor-pointer btn py-2.5 px-7 bg-[#D2AE5F] text-[13px] text-white rounded-0 uppercase mb-0 transition-all duration-500 hover:bg-[#E7C16D]' value="Add New" />
                               </div>
+                              </form>
                             </div>
                             <Dialog.Close asChild>
                               <button
