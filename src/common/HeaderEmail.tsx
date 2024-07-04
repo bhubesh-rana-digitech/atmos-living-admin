@@ -18,7 +18,7 @@ function HeaderEmail({emailData}:HeaderEmailProp) {
         <div className='bg-white relative z-10'>
             <ScrollArea className="h-[300px]">
                 <ul className='notification-list list-unstyled m-0 p-0 w-full max-w-[320px]'>
-                    {emailData.map((data, index) => (
+                    {emailData?.map((data, index) => (
                         <li className='' key={index}>
                             <div className="notification-wrap py-4 px-4 flex items-start">
                                 <div className="notify-icon w-12 h-12">
