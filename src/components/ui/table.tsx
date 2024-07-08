@@ -1,5 +1,5 @@
 import * as React from "react"
-
+import { useTable, Column, TableOptions } from 'react-table';
 import { cn } from "@/lib/utils"
 
 const Table = React.forwardRef<

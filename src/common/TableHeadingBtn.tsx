@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-function TableHeadingBtn({showButton='',headingName='',tableActionLink='',actionName=''}) {
+function TableHeadingBtn({showButton,headingName='',tableActionLink='',actionName=''}) {
   return (
     <>
         <div className='border-b border-[#e9ebec] border-solid px-4 py-5'>
