@@ -3,7 +3,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import React from 'react'
 import { IoCloseOutline } from 'react-icons/io5';
 import {Select,SelectContent,SelectItem,SelectTrigger,SelectValue,} from "@/components/ui/select"
-function TableHeadingBtn({showButton='',headingName='',tableActionLink='',actionName=''}) {
+function TableHeadingBtn({showButton='',headingName='',tableActionLink='',actionName='',showAnchor= false}) {
   return (
     <>
         <div className='border-b border-[#e9ebec] border-solid px-4 py-5'>
@@ -70,6 +70,13 @@ function TableHeadingBtn({showButton='',headingName='',tableActionLink='',action
                       </Dialog.Root>
                     </div>
                 ):("")}
+
+                {showAnchor?(
+                    <div className='flex'>
+                      <Link href={tableActionLink} className='btn py-2.5 px-7 bg-[#D2AE5F] text-[13px] text-white rounded-0 uppercase mb-0 transition-all duration-500 hover:bg-[#E7C16D]'>{actionName}</Link>
+                    </div>
+                ):("")}
+
             </div>
           </div>
         </div>
