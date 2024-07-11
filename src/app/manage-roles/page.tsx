@@ -40,7 +40,7 @@ function ManageRoles() {
                 <div className="role-action">
                     <Dialog.Root>
                         <Dialog.Trigger asChild>
-                        <Link href='#' className='btn bg-[#198754] text-white rounded-[4px] py-2 px-3 inline-block justify-center items-center duration-500 transition-all hover:bg-[#1e714b]'><MdOutlineAdd/></Link>
+                          <Link href='#' className='btn bg-[#198754] text-white rounded-[4px] py-2 px-3 inline-block justify-center items-center duration-500 transition-all hover:bg-[#1e714b]'><MdOutlineAdd/></Link>
                         </Dialog.Trigger>
                         <Dialog.Portal>
                         <Dialog.Overlay className="bg-black opacity-50 data-[state=open]:animate-overlayShow fixed inset-0" />
