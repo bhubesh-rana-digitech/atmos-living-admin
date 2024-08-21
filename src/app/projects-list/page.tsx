@@ -45,7 +45,7 @@ function ProjectList() {
                 <TableHead className='bg-[#D2AE5F] font-bold text-white text-[15px] border-r border-[rgba(255,255,255,0.2)] py-5 last:border-0 last:rounded-tr-[10px]'>Actions</TableHead>
               </TableRow>
             </TableHeader>
-            <TableBody>
+            {/* <TableBody>
               {projectTable.map((projectTable) => (
                 <TableRow key={projectTable.invoice}>
                   <TableCell className="py-4 text-[15px] border-r border-b border-[rgba(0,0,0,0.12)] first:border-l-[2px]">{projectTable.serialNumber}</TableCell>
@@ -96,7 +96,7 @@ function ProjectList() {
                   </TableCell>
                 </TableRow>
               ))}
-            </TableBody>
+            </TableBody> */}
           </Table>
 
           <Pagination className='my-7 justify-end'>
