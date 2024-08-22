@@ -1,10 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
 
-function AmenityUploadingInput({ amenityData }) {
+function AmenityUploadingInput({ amenityData }: {amenityData:any}) {
   return (
     <>
-      {amenityData.map((item, index) => (
+      {amenityData.map((item:any, index:any) => (
         <li key={index} className="amenity-box bg-[rgba(0,0,0,0.035)] py-3 px-5 mr-[20px] mb-[20px] nth-child(3):bg-slate-800 flex items-center">
             <div className="drag-option mt-4 pt-1">
                 <span className="mr-3 block">

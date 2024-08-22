@@ -1,5 +1,5 @@
-"use client"
-import React, { PureComponent } from 'react';
+"use client";
+import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 function ChartOne() {
@@ -77,54 +77,55 @@ function ChartOne() {
       amt: 2181,
     },
   ];
-  const monthTickFormatter = (tick) => {
+
+  const monthTickFormatter = (tick: any) => {
     const date = new Date(tick);
-  
-    return date.getMonth() + 1;
+    return (date.getMonth() + 1).toString(); // Convert the number to a string
   };
-  
-  const renderQuarterTick = (tickProps) => {
+
+  const renderQuarterTick = (tickProps: any) => {
     const { x, y, payload } = tickProps;
     const { value, offset } = payload;
     const date = new Date(value);
     const month = date.getMonth();
     const quarterNo = Math.floor(month / 3) + 1;
     const isMidMonth = month % 3 === 1;
-  
+
     if (month % 3 === 1) {
       return <text x={x} y={y - 4} textAnchor="middle">{`Q${quarterNo}`}</text>;
     }
-  
+
     const isLast = month === 11;
-  
+
     if (month % 3 === 0 || isLast) {
       const pathX = Math.floor(isLast ? x + offset : x - offset) + 0.5;
-  
+
       return <path d={`M${pathX},${y - 4}v${-35}`} stroke="red" />;
     }
-    return null;
+    return <text x={x} y={y} />;
   };
+
   return (
     <ResponsiveContainer width="100%" height={300}>
-    <BarChart data={data} margin={{ top: 5,right: 30, left: 20, bottom: 5}}>
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="date" tickFormatter={monthTickFormatter} />
-      <XAxis
-        dataKey="date"
-        axisLine={false}
-        tickLine={false}
-        interval={0}
-        tick={renderQuarterTick}
-        height={1}
-        scale="band"
-        xAxisId="quarter"
-      />
-      <YAxis />
-      <Tooltip />
-      <Legend />
-      <Bar dataKey="pv" fill="#8884d8" />
-      <Bar dataKey="uv" fill="#82ca9d" />
-    </BarChart>
+      <BarChart data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="date" tickFormatter={monthTickFormatter} />
+        <XAxis
+          dataKey="date"
+          axisLine={false}
+          tickLine={false}
+          interval={0}
+          tick={renderQuarterTick}
+          height={50} // Adjusted height
+          scale="band"
+          xAxisId="quarter"
+        />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Bar dataKey="pv" fill="#8884d8" />
+        <Bar dataKey="uv" fill="#82ca9d" />
+      </BarChart>
     </ResponsiveContainer>
   );
 }

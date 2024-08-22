@@ -24,7 +24,6 @@ function page() {
             webOwner: "Inactive",
             webBooking: "Inactive",
             webCreated: "Inactive",
-            webCreated: "Inactive",
             webAction: <MdModeEditOutline/>,
             webActionTwo: <FaTrashAlt/>,
             webActionThree: <FaEye />,
@@ -55,7 +54,7 @@ function page() {
                         </TableHeader>
                         <TableBody>
                             {webTable.map((webTable) => (
-                                <TableRow key={webTable.webTable}>
+                                <TableRow key={webTable.serialNumber}>
                                     <TableCell className="py-4 text-[15px] border-r border-b border-[rgba(0,0,0,0.12)] first:border-l-[2px]">{webTable.serialNumber}</TableCell>
                                     <TableCell className="py-4 text-[15px] border-r border-b border-[rgba(0,0,0,0.12)] first:border-l-[2px]">{webTable.webCustomer}</TableCell>
                                     <TableCell className="py-4 text-[15px] border-r border-b border-[rgba(0,0,0,0.12)] first:border-l-[2px]">
@@ -76,8 +75,8 @@ function page() {
                                                 <SelectValue placeholder="Active" />
                                             </SelectTrigger>
                                             <SelectContent className='bg-white'>
-                                                <SelectItem value="Active">{webTable.webPublish}</SelectItem>
-                                                <SelectItem value="Inactive">{webTable.webPublishTwo}</SelectItem>
+                                                <SelectItem value="Active">{webTable.webAction}</SelectItem>
+                                                <SelectItem value="Inactive">{webTable.webActionTwo}</SelectItem>
                                             </SelectContent>
                                         </Select>
                                     </TableCell>

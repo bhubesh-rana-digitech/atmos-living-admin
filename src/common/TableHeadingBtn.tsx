@@ -3,7 +3,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 import React from 'react'
 import { IoCloseOutline } from 'react-icons/io5';
 import {Select,SelectContent,SelectItem,SelectTrigger,SelectValue,} from "@/components/ui/select"
-function TableHeadingBtn({showButton='',headingName='',tableActionLink='',actionName='',showAnchor= false}) {
+function TableHeadingBtn({showButton=true,headingName='',tableActionLink='',actionName='',showAnchor= false}) {
   return (
     <>
         <div className='border-b border-[#e9ebec] border-solid px-4 py-5'>

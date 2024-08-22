@@ -178,7 +178,7 @@ function page() {
                         </TableHeader>
                         <TableBody>
                             {projectTable.map((projectTable) => (
-                                <TableRow key={projectTable.invoice}>
+                                <TableRow key={projectTable.serialNumber}>
                                     <TableCell className="py-4 text-[15px] border-r border-b border-[rgba(0,0,0,0.12)] first:border-l-[2px]">{projectTable.serialNumber}</TableCell>
                                     <TableCell className="py-4 text-[15px] border-r border-b border-[rgba(0,0,0,0.12)] first:border-l-[2px]">{projectTable.UnitNumber}</TableCell>
                                     <TableCell className="py-4 text-[15px] border-r border-b border-[rgba(0,0,0,0.12)]">{projectTable.project}</TableCell>

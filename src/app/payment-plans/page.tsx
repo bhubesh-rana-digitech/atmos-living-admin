@@ -72,7 +72,7 @@ function page() {
                         </TableHeader>
                         <TableBody>
                             {paymentTable.map((paymentTable) => (
-                                <TableRow key={paymentTable.invoice}>
+                                <TableRow key={paymentTable.serialNumber}>
                                     <TableCell className="py-4 text-[15px] border-r border-b border-[rgba(0,0,0,0.12)] first:border-l-[2px]">{paymentTable.serialNumber}</TableCell>
                                     <TableCell className="py-4 text-[15px] border-r border-b border-[rgba(0,0,0,0.12)] first:border-l-[2px]">{paymentTable.UnitNumber}</TableCell>
                                     <TableCell className="py-4 text-[15px] border-r border-b border-[rgba(0,0,0,0.12)] first:border-l-[2px] w-[400px]">

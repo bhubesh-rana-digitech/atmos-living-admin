@@ -8,7 +8,8 @@ import { RxCross2 } from "react-icons/rx";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination'
 
-function page({showNewButton=false}) {
+function page() {
+    const showNewButton=false
     const headingName = "Bookings"
     const actionName = "Add New"
     const tableActionLink = ""
@@ -220,7 +221,7 @@ function page({showNewButton=false}) {
                                     </TableCell>
                                     <TableCell className="py-[23px] text-[15px] border-r border-b flex items-center !border-t-0 border-[rgba(0,0,0,0.12)] ">
                                         <Link href='' className='btn bg-[#0dcaf0] text-white rounded-[4px] py-1.5 px-2 inline-block justify-center items-center duration-500 transition-all hover:bg-[#01a7c8]'>{bookingTable.unitAction}</Link>
-                                        {showNewButton ? (<Link href='' className='ms-2 btn bg-[#316863] text-white rounded-[4px] py-1.5 px-2 inline-block justify-center items-center duration-500 transition-all hover:bg-[#2d5e59]'>{bookingTable.unitTextTwo}</Link>):(<Link href='' className='ms-2 btn bg-[#316863] text-white rounded-[4px] py-1.5 px-2 inline-block justify-center items-center duration-500 transition-all hover:bg-[#2d5e59]'>{bookingTable.unitActionTwo}</Link>)}
+                                        {showNewButton ? (<Link href='' className='ms-2 btn bg-[#316863] text-white rounded-[4px] py-1.5 px-2 inline-block justify-center items-center duration-500 transition-all hover:bg-[#2d5e59]'></Link>):(<Link href='' className='ms-2 btn bg-[#316863] text-white rounded-[4px] py-1.5 px-2 inline-block justify-center items-center duration-500 transition-all hover:bg-[#2d5e59]'>{bookingTable.unitActionTwo}</Link>)}
                                         <Link href='' className='ms-2 btn bg-[#dc3545] text-white rounded-[4px] py-1.5 px-2 inline-block justify-center items-center duration-500 transition-all hover:bg-[#bb2d3b]'>{bookingTable.unitActionThree}</Link>
                                     </TableCell>
                                 </TableRow>

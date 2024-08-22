@@ -8,7 +8,12 @@ import { FaPlus } from 'react-icons/fa';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import Link from 'next/link';
 
-function CollapseAmenities({ collapseData }) {
+// Define the type for collapseData items
+interface CollapseDataItem {
+    collapseHeading: string;
+}
+
+function CollapseAmenities({ collapseData = [] }: { collapseData: CollapseDataItem[] }) {
     // Initialize collapsed states with true to ensure all are closed initially
     const [collapsedStates, setCollapsedStates] = useState(collapseData.map(() => true));
 
@@ -56,7 +61,7 @@ function CollapseAmenities({ collapseData }) {
         setCollapsedStates(collapseData.map(() => true));
     }, [collapseData]);
 
-    const toggleCollapse = (index) => {
+    const toggleCollapse = (index:any) => {
         const newCollapsedStates = [...collapsedStates];
         newCollapsedStates[index] = !newCollapsedStates[index];
         setCollapsedStates(newCollapsedStates);
@@ -64,7 +69,7 @@ function CollapseAmenities({ collapseData }) {
 
     return (
         <>
-            {collapseData.map((item, index) => (
+            {collapseData.map((item:any, index:any) => (
                 <Collapsible key={index} open={!collapsedStates[index]} onOpenChange={() => toggleCollapse(index)} className='mb-5'>
                     <CollapsibleTrigger className={`w-full flex items-center text-start px-5 py-4 rounded-t-[8px] justify-between 
                             ${collapsedStates[index] ? 'bg-[#ECE1CC] ' : 'bg-[#2d5e59] text-[#ffffff]'}`}>

@@ -1,14 +1,18 @@
 import React from 'react'
 import { IoCloseOutline } from 'react-icons/io5';
 import * as Dialog from '@radix-ui/react-dialog';
+import Link from 'next/link';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@radix-ui/react-select';
 
 function HeadingModalButton() {
+    const tableActionLink = ""
+    const actionName = ""
     return (
         <>
             
             <Dialog.Root>
                 <Dialog.Trigger asChild>
-                    <Lin href={tableActionLink} className='btn py-2.5 px-7 bg-[#D2AE5F] text-[13px] text-white rounded-0 uppercase mb-0 transition-all duration-500 hover:bg-[#E7C16D]'>{actionName}</Lin>
+                    <Link href={tableActionLink} className='btn py-2.5 px-7 bg-[#D2AE5F] text-[13px] text-white rounded-0 uppercase mb-0 transition-all duration-500 hover:bg-[#E7C16D]'>{actionName}</Link>
                 </Dialog.Trigger>
                 <Dialog.Portal>
                     <Dialog.Overlay className="bg-black opacity-50 data-[state=open]:animate-overlayShow fixed inset-0" />
